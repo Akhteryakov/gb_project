@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.uc {
+    text-transform: uppercase;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #222222;
+}
+
+.header__wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 75px;
+    ;
+}
+
+.header__logo-serach {
+    margin-bottom: 20px;
+}
+
+.header__search-button {
+    background: transparent;
+    border: none;
+    margin-left: 41px;
+}
+
+.header__menu-person-basket {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.header__menu-button {
+    border-style: none;
+    background: transparent;
+}
+
+.header__person {
+    margin-left: 33px;
+}
+
+.header__basket {
+    margin-left: 33px;
+}
+
+.the-brand {
+    display: flex;
+}
+
+.the-brand__slogan {
+    background: #F1E4E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.the-brand__slogan-text {
+    margin-left: 92px;
+}
+
+.slogan-text__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.slogan-text__subtitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 44px;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.slogan-text__subtitle_pink {
+    color: #F16D7F;
+}
+
+.sales {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sales__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #F16D7F
+}
+
+.sales__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff
+}
+
+.sales__women {
+    position: relative;
+}
+
+.sales__women-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.sales__men {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/for-men.jpg);
+}
+
+.sales__kids {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/for-kids.jpg);
+}
+
+.new-string {
+    flex-basis: 100%;
+    height: 0px;
+}
+
+.sales__accesories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/accesories.jpg);
+}
