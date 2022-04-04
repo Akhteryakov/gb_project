@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
@@ -90,132 +91,155 @@
 
         <section class="container" >
             <h2 class="visually-hidden" aria-hidden="true" tabindex="-1">sales</h2>
+            <!-- переделать без new-string с заданными размерами и заглушками-фонами картинок -->
             <ul class="sales">
                 <li class="sales__women">
                     <img src="./img/for-women.jpg" alt="for-women">
-                    <div class="sales__women-text">
-                        <p class="sales__subtitle uc">30% off</p>
-                        <h3 class="sales__title uc">for women</h3>
+                    <div class="sales__text">
+                        <p class="sales__subtitle uppercase-text">30% off</p>
+                        <h3 class="sales__title uppercase-text">for women</h3>
                     </div>
                 </li>
                 <li class="sales__men">
-                    <p>hot deal</p>
-                    <h3>for men</h3>
+                    <img src="./img/for-men.jpg" alt="for-man">
+                    <div class="sales__text">
+                        <p class="sales__subtitle uppercase-text">hot deal</p>
+                        <h3 class="sales__title uppercase-text">for men</h3>
+                    </div>
                 </li>
                 <li class="sales__kids">
-                    <p>new arrivals</p>
-                    <h3>for kids</h3>
+                    <img src="./img/for-kids.jpg" alt="for-kids">
+                    <div class="sales__text">
+                        <p class="sales__subtitle uppercase-text">new arrivals</p>
+                        <h3 class="sales__title uppercase-text">for kids</h3>
+                    </div>
                 </li>
-                <li class="new-string"></li>
+                <li class="new-string">
+                </li>
                 <li class="sales__accesories">
-                    <p>luxirous & trendy</p>
-                    <h3>accesories</h3>
+                    <img src="./img/accesories.jpg" alt="accesories">
+                    <div class="sales__text">
+                        <p class="sales__subtitle uppercase-text">luxirous & trendy</p>
+                        <h3 class="sales__title uppercase-text">accesories</h3>
+                    </div>
                 </li>
             </ul>
         </section>
 
-        <section>
-            <h2>Fetured Items</h2>
-            <p>Shop for items based on what we featured in this week</p>
-            <ul>
-                <li>
-                    <img src="./img/item-man-one.jpg" alt="man">
-                    <h3>ellery x m'o capsule</h3>
-                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p>$52.00</p>
-                </li>            
-                <li><img src="./img/item-woman-one.jpg" alt="woman">
-                    <h3>ellery x m'o capsule</h3>
-                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p>$52.00</p>
-                </li>
-                <li>
-                    <img src="./img/item-man-two.jpg" alt="man">
-                    <h3>ellery x m'o capsule</h3>
-                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p>$52.00</p>
-                </li>
-                <li>
-                    <img src="./img/item-man-three.jpg" alt="man">
-                    <h3>ellery x m'o capsule</h3>
-                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p>$52.00</p>
-                </li>
-                <li>
-                    <img src="./img/item-woman-two.jpg" alt="woman">
-                    <h3>ellery x m'o capsule</h3>
-                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p>$52.00</p>
-                </li>
-                <li>
-                    <img src="./img/item-women-three.jpg" alt="woman">
-                    <h3>ellery x m'o capsule</h3>
-                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p>$52.00</p>
-                </li>
-            </ul>
+        <section class="products container">
+            <div class="products__wrp">
+                <h2 class="products__title">Fetured Items</h2>
+                <p class="products__subtitle">Shop for items based on what we featured in this week</p>
+                <ul class="products__list">
+                    <li class="products__item">
+                        <img class="products__items-img" src="./img/item-man-one.jpg" alt="man">
+                        <h3 class="products__item-title uppercase-text">ellery x m'o capsule</h3>
+                        <p class="products__item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="products__item-price">$52.00</p>
+                    </li>
+                    <li class="products__item">
+                        <img class="products__items-img" src="./img/item-woman-one.jpg" alt="woman">
+                        <h3 class="products__item-title uppercase-text">ellery x m'o capsule</h3>
+                        <p class="products__item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="products__item-price">$52.00</p>
+                    </li>
+                    <li class="products__item">
+                        <img class="products__items-img" src="./img/item-man-two.jpg" alt="man">
+                        <h3 class="products__item-title uppercase-text">ellery x m'o capsule</h3>
+                        <p class="products__item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="products__item-price">$52.00</p>
+                    </li>
+                    <li class="products__item">
+                        <img class="products__items-img" src="./img/item-man-three.jpg" alt="man">
+                        <h3 class="products__item-title uppercase-text">ellery x m'o capsule</h3>
+                        <p class="products__item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="products__item-price">$52.00</p>
+                    </li>
+                    <li class="products__item">
+                        <img class="products__items-img" src="./img/item-woman-two.jpg" alt="woman">
+                        <h3 class="products__item-title uppercase-text">ellery x m'o capsule</h3>
+                        <p class="products__item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="products__item-price">$52.00</p>
+                    </li>
+                    <li class="products__item">
+                        <img class="products__items-img" src="./img/item-women-three.jpg" alt="woman">
+                        <h3 class="products__item-title uppercase-text">ellery x m'o capsule</h3>
+                        <p class="products__item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="products__item-price">$52.00</p>
+                    </li>
+                </ul>
+                <button class="products__btn-browse-all">
+                    <a class="products__btn-browse-all-link" href="#">Browse All Product</a>
+                </button>
+            </div>            
         </section>
 
-        <button>
-            <a href="#">Browse All Product</a>
-        </button>
-
-        <section>
-            <h2>advantages</h2>
-            <ul>
-                <li>
-                    <img src="./img/delivery.svg" alt="delivery">
-                    <h3>Free Delivery</h3>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                </li>
-                <li>
-                    <img src="./img/salies.svg" alt="sales">
-                    <h3>Sales & discounts</h3>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                </li>
-                <li>
-                    <img src="./img/qualiti.svg" alt="quality">
-                    <h3>Quality assurance</h3>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                </li>
-            </ul>
+        <section class="advantages">
+            <div class="container">
+                <h2 class="visually-hidden" aria-hidden="true" tabindex="-1">advantages</h2>
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <img src="./img/delivery.svg" alt="delivery">
+                        <h3 class="advantages__title">Free Delivery</h3>
+                        <p class="advantages__subtitle">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="./img/salies.svg" alt="sales">
+                        <h3 class="advantages__title">Sales & discounts</h3>
+                        <p class="advantages__subtitle">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="./img/qualiti.svg" alt="quality">
+                        <h3 class="advantages__title">Quality assurance</h3>
+                        <p class="advantages__subtitle">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 
     <footer>       
-        <section>
-            <h2>quote and subscribe</h2>
-            <img src="./img/icon-women.png" alt="icon-women">
-            <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
-            <h3>subscribe</h3>
-            <p>for our newletter and promotion</p>
-            <div>[subscribe form]</div>
+        <section class="footer__qute-and-subscribe">
+            <div class="footer__qute-and-subscribe-wrp container">
+                <h2 class="visually-hidden" aria-hidden="true" tabindex="-1">quote and subscribe</h2>
+                <div class="foter__quote">
+                    <img src="./img/icon-women.png" alt="icon-women">
+                    <p class="foter__quote-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                </div>
+                <div class="footer__subscribe">
+                    <h3 class="footer__subscribe-title uppercase-text">subscribe</h3>
+                    <p class="footer__subscribe-sebtitle uppercase-text">for our newletter and promotion</p>
+                    <div>[I'm subscribe form]</div>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>rights and social media</h2>
-            <p>© 2021  Brand  All Rights Reserved.</p>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="./img/fb-bg.svg" alt="facebook">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/inst-bg.svg" alt="instagram">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/prn-bg.svg" alt="printerest">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/tw-bg.svg" alt="twitter"></li>
-                    </a>
-            </ul>
+        <section class="foter__bar">
+            <div class="foter__bar-wrp container">
+                <h2 class="visually-hidden" aria-hidden="true" tabindex="-1">advantages>rights and social media</h2>
+                <p class="footer__bar-rights">© 2021  Brand  All Rights Reserved.</p>
+                <ul class="footer__bar-social">
+                    <li>
+                        <a href="#">
+                            <img src="./img/fb-bg.svg" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/inst-bg.svg" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/prn-bg.svg" alt="printerest">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/tw-bg.svg" alt="twitter"></li>
+                        </a>
+                </ul>
+            </div>
         </section>
 
     </footer>

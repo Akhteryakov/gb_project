@@ -1,0 +1,376 @@
+:root {
+    --black-bkg: #222222;
+    --light-grey-bkg: #F8F8F8;
+    --pink-bkg: #F1E4E6;
+    --pink-elements: #FF6A6A;
+    --pink-text: #F16D7F;
+    --black-text: #222222;
+    --dark-gray-text: #5D5D5D;
+    --grey-text: #9F9F9F;
+    --white-text: #ffffff;
+    --almost-white-text: #FBFBFB;
+    
+    
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--black-bkg);
+}
+
+.header__wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 75px;
+    ;
+}
+
+.header__logo-serach {
+    margin-bottom: 20px;
+}
+
+.header__search-button {
+    background: transparent;
+    border: none;
+    margin-left: 41px;
+}
+
+.header__menu-person-basket {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.header__menu-button {
+    border-style: none;
+    background: transparent;
+}
+
+.header__person {
+    margin-left: 33px;
+}
+
+.header__basket {
+    margin-left: 33px;
+}
+
+.the-brand {
+    display: flex;
+}
+
+.the-brand__slogan {
+    background: var(--pink-bkg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.the-brand__slogan-text {
+    margin-left: 92px;
+}
+
+.slogan-text__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.slogan-text__subtitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 44px;
+    color: var(--black-text)
+    text-transform: uppercase;
+}
+
+.slogan-text__subtitle_pink {
+    color: var(--pink-text);
+}
+
+.sales {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 64px 0 0 0;
+    gap: 15px 30px;
+}
+
+.sales__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.sales__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: var(--pink-text);
+}
+
+.sales__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white-text)
+}
+
+.sales__women {
+    position: relative;
+}
+
+.sales__men {
+    position: relative; 
+}
+
+.sales__kids {
+    position: relative;
+}
+
+.new-string {
+    flex-basis: 100%;
+    height: 0px;
+}
+
+.sales__accesories {
+    position: relative;
+}
+
+.products {
+    margin-top: 97px;
+}
+
+.products__wrp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products__title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--black-text);
+}
+
+.products__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--grey-text);
+}
+
+.products__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 48px 0 0 0;
+}
+
+.products__item {
+    height: 581px;
+    width: 360px;
+    background-color: var(--light-grey-bkg);
+}
+
+.products__item-title {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--black-text);
+    padding: 25px 0 0 18px;
+}
+
+.products__item-description {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--dark-gray-text);
+    padding: 13px 18px 0 18px;
+}
+
+.products__item-price {
+    font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: var(--pink-text);
+padding: 18px 0 0 18px;
+}
+
+.products__btn-browse-all {
+    background: transparent;
+    border: none;
+    height: 47px;
+    width: 211px;
+    border: solid 1px var(--pink-elements);
+    margin: 48px 0 0 0;
+}
+
+.products__btn-browse-all-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--pink-text);
+    text-decoration: none;
+}
+
+.advantages {
+    min-height: 341px;
+    background-color: var(--black-bkg);
+    margin: 109px 0 0 0;
+}
+
+.advantages__list {
+    display: flex;
+    justify-content:space-around;
+    
+}
+
+.advantages__item {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 103px 0 0 0;
+
+}
+
+.advantages__title{
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: var(--almost-white-text);
+    margin: 28px 0 0 0;
+}
+
+.advantages__subtitle {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: var(--almost-white-text);
+    margin: 28px 0 0 0;
+}
+
+.footer__qute-and-subscribe {
+    min-height: 448px;
+    background-image: url(../img/foter-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.footer__qute-and-subscribe-wrp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foter__quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 87px 0 0 0;
+}
+
+.foter__quote-text {
+    width: 360px;
+    font-style:italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--black-text);
+
+}
+
+.footer__subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0 0 0;
+}
+
+.footer__subscribe-title {
+    font-weight: 700;
+    font-style: bold;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--black-text);
+}
+
+.footer__subscribe-sebtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--black-text);
+}
+
+.foter__bar {
+    min-height: 79px;
+    background-color: var(--black-bkg);
+}
+
+.foter__bar-wrp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__bar-rights{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--almost-white-text);
+    padding: 30px 0 0 0;
+}
+
+.footer__bar-social {
+    display: flex;
+    padding: 24px 0 0 0;
+    gap: 7px;
+}
+
+
+
